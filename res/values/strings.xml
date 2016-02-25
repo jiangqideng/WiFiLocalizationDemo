@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WifiLocalizationDemo</string>
+    <string name="action_abouts">关于软件</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ok">确定</string>
+    <string name="about">本软件版权归属于 TJU CIPS</string>
+    <string name="version">版本：Ver 2.1.0 Beta</string>
+
+</resources>
