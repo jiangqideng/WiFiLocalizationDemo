@@ -34,25 +34,22 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 	private static MainActivity mainactivity;
-	// private TextView TipsTextView;
 	private TextView StatusTextView;
 	private TextView resultsTextView;
 	private ImageButton myPositionImageButton;
 	private ImageView planMapImageView;
-
 	public static final long WIFI_SCAN_DELAY = 1000;
-	private static final String TAG = "WifiLocalizationDemo";
-
 	private SensorManager sensorManager;
-	private SensorEventListener mSensorListener;
 	private SensorEventListener oSensorListener;
-	private Sensor msensor;
 	private Sensor osensor;
 	private WifiManager wifiManager;
 	private List<ScanResult> scanResults = null;
 	private Timer wifiScanTimer;
 	private TimerTask wifiScanTimerTask;
-
+	
+	// 以后和惯导进行混合定位的时候用
+	private SensorEventListener mSensorListener;
+	private Sensor msensor;
 	int width; // 屏幕宽度（像素）
 	int height; // 屏幕高度（像素）
 	float density; // 屏幕密度（0.75 / 1.0 / 1.5）
@@ -63,12 +60,11 @@ public class MainActivity extends Activity {
 	private float[] temp_m = new float[3];
 	private float[] temp_r = new float[3];
 
-	String bssids[];
-
-	float radioMap1[][];
-	int N_fp = 0;// 指纹库的指纹长度
-	int M_fp = 0;// 指纹库的指纹个数
-
+	String bssids[];		//记录Bssid
+	
+	int N_fp = 0;			// 指纹库的指纹长度
+	int M_fp = 0;			// 指纹库的指纹个数
+	float radioMap1[][];	//存储指纹库
 	float radioMap2[][];
 	float rssScan[] = new float[229];
 
@@ -438,7 +434,8 @@ public class MainActivity extends Activity {
 				}
 			}
 		}// 这时rss数组的右端为最大的rss值，数组index的右端为相应的index
-			// //////设定搜索范围
+		
+		//设定搜索范围
 		int searchRange[] = new int[M];
 		int L_search;
 
@@ -538,5 +535,4 @@ public class MainActivity extends Activity {
 		}
 
 	}
-
 }
