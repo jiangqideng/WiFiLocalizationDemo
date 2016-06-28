@@ -7,10 +7,18 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_height="50sp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/logo_1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:background="#FF34B3" />
 
     <FrameLayout
         android:id="@+id/frameLayout_1"
@@ -40,17 +48,20 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imageView2"
         android:layout_above="@id/frameLayout_1"
+        android:gravity="left"
+        android:layout_marginLeft="10sp"
         android:text="" />
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/frameLayout_1"
+        android:layout_above="@+id/textView2"
+        android:gravity="left"
+        android:layout_marginLeft="10sp"
         android:text="" />
 
 </RelativeLayout>

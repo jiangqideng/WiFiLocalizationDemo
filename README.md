@@ -1,10 +1,12 @@
 ## WiFiLocalizationDeMo
 
----
-
 ###简介
 
-一个使用wifi进行室内定位的Android应用程序。手机扫描附近WiFi热点，将信号强度与数据库进行对比，确定当前位置并显示。
+一个使用wifi进行室内定位的Android应用程序。手机扫描附近WiFi热点，将信号强度与数据库进行对比，实现knn算法，确定当前位置并显示。
+
+###欢迎界面
+
+![main](https://raw.githubusercontent.com/jiangqideng/resources/master/device-2016-06-29-010909.png)
 
 ###主界面
 
