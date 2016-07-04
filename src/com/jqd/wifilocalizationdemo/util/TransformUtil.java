@@ -28,7 +28,8 @@ public class TransformUtil {
 			for (int j = 0; j < scanResults.size(); j++) {
 				String bssid = scanResults.get(j).BSSID;
 				if (bssids.containsKey(bssid)) {
-					rssScan[bssids.get(bsscount)] = scanResults.get(j).level;
+					int idx = bssids.get(bssid);
+					rssScan[idx] = scanResults.get(j).level;
 					bsscount++;
 				}
 			}
