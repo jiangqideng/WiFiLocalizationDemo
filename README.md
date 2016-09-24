@@ -1,4 +1,4 @@
-## WiFiLocalizationDeMo
+## WiFiLocalizationDemo
 
 ###简介
 
